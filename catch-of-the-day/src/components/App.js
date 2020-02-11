@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 import Header from './Header';
 import Order from './Order';
@@ -106,7 +106,7 @@ class App extends React.Component {
           deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
-
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );
